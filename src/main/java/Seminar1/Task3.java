@@ -17,15 +17,15 @@ public class Task3 {
         String s1;
         int time = LocalTime.now().getHour();
         if (time == 5 || time < 12)
-            s1 = "Доброе утро";
+            s1 = "Доброе утро, ";
         else if (time < 18)
-            s1 = "Добрый день";
+            s1 = "Добрый день, ";
         else if (time < 23)
-            s1 = "Добрый вечер";
+            s1 = "Добрый вечер, ";
         else
-            s1 = "Доброй ночи";
-        //System.out.println(Name);
-        System.out.printf(s1 + ", " + Name + "!");
+            s1 = "Доброй ночи, ";
+
+        System.out.printf(s1 + Name + "!");
         iScanner.close();
     }
 }
